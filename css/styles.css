@@ -22,6 +22,7 @@
 }
 img {
    display: block;
+   width: 100%;
 }
 body {
    font-family: "Roboto", sans-serif;
@@ -369,7 +370,7 @@ h1, h2, h3, h4, p, ul {
       row-gap: 72px;
       column-gap: 24px;}
    .sect-wrap-items {
-      flex-basis: calc((100% - 48px) / 2); 
+      flex-basis: calc((100% - 24px) / 2); 
      }
   }
 @media (max-width: 428px) {
@@ -377,6 +378,10 @@ h1, h2, h3, h4, p, ul {
       display: inline-flex;
       flex-direction: column;
       gap: 72px;
+      }
+   .name {
+      justify-content: center;
+       text-align: center;
       }
   }
    
@@ -386,6 +391,10 @@ h1, h2, h3, h4, p, ul {
    }
    .section-wrapper {
       padding: 96px 0;
+   }
+   .sect-wrap-list {
+      justify-content: center;
+      text-align: start;
    }
    .name {
      font-size: 36px;
@@ -499,7 +508,7 @@ h1, h2, h3, h4, p, ul {
 /*-------adaptive-------*/
 @media screen and  (max-width: 428px), (max-width: 768px)  {
    .hands {
-      padding: 120px 0;}
+      padding: 96px 0;}
     .hands-list {
       justify-content: center;
       text-align: center;
@@ -512,7 +521,7 @@ h1, h2, h3, h4, p, ul {
       row-gap: 72px;
       column-gap: 24px;}
    .hands-items {
-      flex-basis: calc((100% - 48px) / 2); 
+      flex-basis: calc((100% - 24px) / 2); 
      }
   }
 @media (max-width: 428px) {
@@ -567,22 +576,29 @@ h1, h2, h3, h4, p, ul {
    fill: currentColor;
   }
   /*---------adaptive-----------*/
+  @media screen and  (max-width: 428px), (max-width: 768px)  {
+   .customers {
+      padding: 96px 0;}
+    .customers-list {
+      justify-content: center;
+      text-align: center;
+   }
+}
   @media (max-width: 768px) {
    .customers-list {
       flex-wrap: wrap; 
       row-gap: 72px;
       column-gap: 24px;}
    .customers-list-icon {
-      flex-basis: calc((100% - 48px) / 2); 
+      flex-basis: calc((100% - 48px) / 3); 
      }
   }
 @media (max-width: 428px) {
   .customers-list-icon {
-      display: inline-flex;
-      flex-direction: column;
-      gap: 72px;
+   flex-basis: calc((100% - 24px) / 2); 
+        }
       }
-  }
+  
 /*---------------------------------FOOTER---------------------------*/
 .foot {
    background-color: var(--background-color);
@@ -728,37 +744,37 @@ margin-bottom: 16px;
    .footer-logo-text {
       margin: 0;
    }
-   .login-form {
-      display: inline-block;
- flex-direction: column;
- 
-   }
    .button-label {
       display: inline-block;
- flex-direction: column;
+      flex-direction: column;
    }
    .footer-content {
      flex-wrap: wrap; 
       row-gap: 72px;
-      column-gap: 24px;
-  
-}
-.customers-list-icon {
-   flex-basis: calc((100% - 48px) / 2); 
-  }
-  .login-email {
-   margin-bottom: 72px;
-   min-width: 398px;
-}
+      column-gap: 24px; 
+    }
+   .customers-list-icon {
+      flex-basis: calc((100% - 48px) / 2); 
+     } 
   }
 @media (max-width: 428px) {
-   .button-label {
-      display: inline-block;
- flex-direction: column;
- 
+   .footer-logo link {
+      justify-content: center;
+      align-items: center;
    }
-  
+   .login-email {
+      margin-bottom: 16px;
+   }
+   .name-foot-media {
+     text-align: center;
+   }
+   .label-text {
+      text-align: center;
+    }
+    .login-form {
+      display: block;
   }
+}
 /*--------------------modal---------------------------------*/
 
 .modal-open {
@@ -1037,3 +1053,37 @@ margin-bottom: 16px;
    font-size: 16px;
    line-height: 1.5;
 }
+@media screen and  (max-width: 428px), (max-width: 768px)  {
+   .project-list  {
+      justify-content: center;
+      text-align: center;
+   }
+}
+@media (max-width: 768px) {
+   .section-portfolio {
+      padding-top: 63.69px; padding-bottom: 96px; 
+   }
+   .filters-list {
+      margin-bottom: 64px;
+      flex-wrap: wrap;
+   }
+   .project-li {
+      width: calc((100% - 24px) / 2);     
+   }
+  }
+@media (max-width: 428px) {
+   .section-portfolio {
+      padding-top: 48px; padding-bottom: 48px; 
+   }
+   .filters-list {
+      margin-bottom: 48px;
+   }
+   .project-list {
+      display: inline-flex;
+      flex-direction: column;
+      margin: 0 auto;
+   }
+  .image-list {
+   min-width: 368px;
+  }
+    }
