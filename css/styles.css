@@ -151,7 +151,11 @@ h1, h2, h3, h4, p, ul {
         margin-left: 131px;
         padding: 0;
     } 
+    .nav-logo {
+      margin-left: 16px;
+    }
 }
+
 /*-------------phone-menu---------------*/
 @media (max-width: 768px) {
     .menu-list {
@@ -378,10 +382,15 @@ h1, h2, h3, h4, p, ul {
       display: inline-flex;
       flex-direction: column;
       gap: 72px;
+      width: 396px;
       }
    .name {
       justify-content: center;
        text-align: center;
+      }
+      .section-wrapper {
+        margin-left: 16px;
+      margin-right: 16px;
       }
   }
    
