@@ -609,6 +609,11 @@ h1, h2, h3, h4, p, ul {
   .customers-list-icon {
    flex-basis: calc((100% - 24px) / 2); 
         }
+        .customers-list {
+         gap: 16px;
+         margin-left: 16px;
+         margin-right: 16px;
+        }
       }
   
 /*---------------------------------FOOTER---------------------------*/
