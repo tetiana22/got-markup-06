@@ -151,13 +151,15 @@ h1, h2, h3, h4, p, ul {
         margin-left: 131px;
         padding: 0;
     } 
-    .nav-logo {
+   }
+@media (max-width: 428px) {
+    .contacts {
       margin-left: 16px;
     }
 }
 
 /*-------------phone-menu---------------*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .menu-list {
       display: none;
     }
@@ -383,17 +385,13 @@ h1, h2, h3, h4, p, ul {
       flex-direction: column;
       gap: 72px;
       width: 396px;
+
       }
    .name {
       justify-content: center;
        text-align: center;
-      }
-      .section-wrapper {
-        margin-left: 16px;
-      margin-right: 16px;
-      }
-  }
-   
+    }    
+  }   
 @media screen and (max-width: 428px), (max-width: 768px)  {
    .icon-wrap {
     display: none;
@@ -404,6 +402,7 @@ h1, h2, h3, h4, p, ul {
    .sect-wrap-list {
       justify-content: center;
       text-align: start;
+      margin-left: 16px;
    }
    .name {
      font-size: 36px;
@@ -601,9 +600,10 @@ h1, h2, h3, h4, p, ul {
       flex-wrap: wrap; 
       row-gap: 72px;
       column-gap: 24px;}
-   .customers-list-icon {
-      flex-basis: calc((100% - 48px) / 3); 
-     }
+      
+    .customers-list-icon {
+   flex-basis: calc((100% - 48px) / 3); 
+        }
   }
 @media (max-width: 428px) {
   .customers-list-icon {
@@ -756,18 +756,11 @@ margin-bottom: 16px;
    .footer-logo-text {
       margin: 0;
    }
-   .button-label {
-      display: inline-block;
-      flex-direction: column;
-   }
    .footer-content {
      flex-wrap: wrap; 
-      row-gap: 72px;
-      column-gap: 24px; 
+     row-gap: 72px;
+     column-gap: 24px; 
     }
-   .customers-list-icon {
-      flex-basis: calc((100% - 48px) / 2); 
-     } 
   }
 @media (max-width: 428px) {
    .foot {
@@ -776,16 +769,12 @@ margin-bottom: 16px;
    .name-foot-media {
      text-align: center;
    }
-  
   .container {
-   width: 100%;
-   max-width: 1158px;
-   margin: 0 auto;
-   padding: 0;
+     padding: 0;
    }
    .footer-content {
      display: inline-block;
-  }
+   }
    .text-footer {
       width: 264px;
       margin-bottom: 72px;
@@ -800,8 +789,6 @@ margin-bottom: 16px;
    .label-text {
       text-align: center;
    }
-
-
    .login-form {
       width: 100%;
       display: flex;
@@ -822,9 +809,7 @@ margin-bottom: 16px;
     .login-email{
       width:100%;
       width: 392px;
-    }
-    
-   
+    }   
 }
 /*--------------------modal---------------------------------*/
 
@@ -1132,7 +1117,11 @@ margin-bottom: 16px;
    .project-list {
       display: inline-flex;
       flex-direction: column;
-      margin: 0 auto;
+   }
+   .project-li {
+      margin-right: 16px;
+      margin-left: 16px;
+      min-width: 396px;
    }
   .image-list {
    min-width: 368px;
