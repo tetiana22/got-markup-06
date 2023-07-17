@@ -508,18 +508,16 @@ h1, h2, h3, h4, p, ul {
 /*-------adaptive-------*/
 @media screen and  (max-width: 428px), (max-width: 768px)  {
    .hands {
-      padding: 96px 0;}
-    .hands-list {
-      justify-content: center;
-      text-align: center;
-   }
-
+      padding: 96px 0;
+}
 }
 @media (max-width: 768px) {
    .hands-list {
       flex-wrap: wrap; 
       row-gap: 72px;
-      column-gap: 24px;}
+      column-gap: 24px;
+      justify-content: center;
+      text-align: center;}
    .hands-items {
       flex-basis: calc((100% - 24px) / 2); 
      }
@@ -528,8 +526,13 @@ h1, h2, h3, h4, p, ul {
   .hands-list {
       display: inline-flex;
       flex-direction: column;
+      margin-left: 82px;
+      margin-right: 82px;
+   
       }
-      
+     .hands-image {
+      max-width: 264px;
+     } 
   }
 /*--------------------------------sect customers---------*/
 .customers {
@@ -758,22 +761,61 @@ margin-bottom: 16px;
      } 
   }
 @media (max-width: 428px) {
-   .footer-logo link {
-      justify-content: center;
-      align-items: center;
-   }
-   .login-email {
-      margin-bottom: 16px;
+   .foot {
+     padding: 97.5px 80px 96px;
    }
    .name-foot-media {
      text-align: center;
    }
+  
+  .container {
+   width: 100%;
+   max-width: 1158px;
+   margin: 0 auto;
+   padding: 0;
+   }
+   .footer-content {
+     display: inline-block;
+  }
+   .text-footer {
+      width: 264px;
+      margin-bottom: 72px;
+      text-align: initial;
+   }
+   .footer-logo-text {
+      text-align: center;
+   }
+   .footer-social-media {
+      margin-bottom: 72px;
+   }
    .label-text {
       text-align: center;
+   }
+
+
+   .login-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .login-form {
-      display: block;
-  }
+    .input-container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    .login-form-label {
+      flex-grow: 1;
+     margin: 0 auto;
+     margin-left: 15px;
+     margin-right: 15px;
+    }
+    .login-email{
+      width:100%;
+      width: 392px;
+    }
+    
+   
 }
 /*--------------------modal---------------------------------*/
 
