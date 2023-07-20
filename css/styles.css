@@ -255,8 +255,8 @@ h1, h2, h3, h4, p, ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 40px; 
-    padding-top: 80px;
-    padding-bottom: 284px;
+    margin-top: 80px;
+    margin-bottom: 284px;
   }
   .mobile-item {
     display: block;
@@ -285,7 +285,7 @@ h1, h2, h3, h4, p, ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
   }
   .mobile-menu-adress .tel {
     display: block;
@@ -325,26 +325,33 @@ h1, h2, h3, h4, p, ul {
       height: 22px;
       width: 32px;
   }
-}
-  @media (max-width: 382px) {
-    .mobile-menu-adress .tel {
-      font-size: 28px;
-      line-height: 1.11;
-      letter-spacing: 0.02em;
-    }
+  .media-list-mobile {
+    gap: 45px;
+    margin-bottom: 40px;
   }
+}
   .container-mobile {
-   max-height: 796px;
+   width: 100%;
    max-width: 428px;
    margin: 0 auto;
    padding: 15px;
-   position: relative;
-   overflow-y: scroll;
   }
   .media-icon-mobile {
    width: 40px;
    height: 40px;
   }
+  @media (max-width: 382px) {
+   .mobile-menu-adress .tel {
+     font-size: 28px;
+     line-height: 1.11;
+     letter-spacing: 0.02em;
+   }
+ }
+ @media (max-height: 796px) {
+  .mobile-menu {
+    
+  }
+ }
 /*----------------------SECTION-MAIN-----------------------*/
 .section-main {
    background-color: var(--background-color);
@@ -363,6 +370,25 @@ h1, h2, h3, h4, p, ul {
   flex-shrink: 0;
   background-position: center;  
 }
+@media (min-resolution: 192dpi) {
+   .section-main {
+    background-color: var(--background-color);
+   border: 1px solid #000;
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office1@2x.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-top: 188px;
+   padding-bottom: 188px;
+   margin-left: auto;
+   margin-right: auto;
+   border: 1px solid #000;
+   max-width: 1440px;
+  max-height: 600px;
+  flex-shrink: 0;
+  background-position: center; 
+   }
+ }
 .main-name {
    font-size: 56px;
    line-height: 1.07;
