@@ -1211,7 +1211,11 @@ margin-bottom: 16px;
    .project-li {
       width: calc((100% - 24px) / 2);     
    }
+   .section-portfolio {
+      margin: 0 auto;
+   }
   }
+  
 @media (max-width: 768px) {
    .section-portfolio {
       padding-top: 48px; padding-bottom: 48px; 
@@ -1219,16 +1223,13 @@ margin-bottom: 16px;
    .filters-list {
       margin-bottom: 48px;
    }
-   .project-list {
-      display: inline-flex;
-      flex-direction: column;
-   }
    .project-li {
       margin-right: 16px;
       margin-left: 16px;
-      min-width: 396px;
+      max-width: 396px;
+      width: 100%;
    }
   .image-list {
-   min-width: 368px;
+   min-width: 232px;
   }
     }
