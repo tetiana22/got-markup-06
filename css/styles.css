@@ -255,7 +255,6 @@ h1, h2, h3, h4, p, ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 40px; 
-    margin-top: 80px;
     margin-bottom: 284px;
   }
   .mobile-item {
@@ -331,16 +330,16 @@ h1, h2, h3, h4, p, ul {
   }
 }
   .container-mobile {
-   width: 100%;
    max-width: 428px;
    margin: 0 auto;
-   padding: 15px;
-   position: absolute;
+   padding: 80px 15px 40px;
+   position: relative;
   }
   .media-icon-mobile {
    width: 40px;
    height: 40px;
   }
+  
   @media (max-width: 382px) {
    .mobile-menu-adress .tel {
      font-size: 28px;
@@ -348,12 +347,12 @@ h1, h2, h3, h4, p, ul {
      letter-spacing: 0.02em;
    }
  }
- @media (max-height: 750px) {
-  
- .mobile-menu {
-   margin: auto;
+ @media (max-height: 796px) {
+   .mobile-menu {
+     margin-bottom: 50px; 
+     transition: margin-bottom 0.5s; 
+   }
  }
-}
 /*----------------------SECTION-MAIN-----------------------*/
 .section-main {
    background-color: var(--background-color);
