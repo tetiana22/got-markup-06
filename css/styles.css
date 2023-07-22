@@ -880,32 +880,6 @@ margin-bottom: 16px;
    margin-right: 0;
 }
 }
-   /*.footer-logo-text {
-      margin: 0;
-   }
-    .foot {
-      padding: 96px 0;  
-   }
-   .login-form {
-      display: flex;
-      align-items: center;
-    }
-   .footer-content {
-      flex-wrap: wrap; 
-       row-gap: 72px;
-       column-gap: 24px;
- 
- }
- .customers-list-icon {
-   flex-basis: calc((100% - 48px) / 2); 
-  }
-   .form-subscribe {
-      display: block;
-      clear: both;
-    }
-  
- 
-  }*/
 @media (max-width: 768px) {
    .footer-content {
       display: flex;
@@ -940,55 +914,6 @@ margin-bottom: 16px;
       width: auto;
    }
 }
-   /*
-   .name-foot-media {
-     text-align: center;
-   }
-   .footer-content {
-     display: inline-block;
-   }
-   .text-footer {
-      width: 264px;
-      margin-bottom: 72px;
-      text-align: initial;
-   }
-   .footer-logo-text {
-      max-width: 268px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-   }
-   .footer-social-media {
-      margin-bottom: 72px;
-   }
-   .login-form {
-      max-width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .input-container {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-    }
-    .login-form-label {
-      flex-grow: 1;
-    margin: 0 auto;
-    }  
-    .form-subscribe {
-      text-align: center;
-    }
-    .media-list-footer {
-      justify-content: center;
-    }
-}
-@media (max-width: 428px) {
-   .login-email{
-      max-width: 398px;
-     
-    }   
-}*/
 /*--------------------modal---------------------------------*/
 
 .modal-open {
