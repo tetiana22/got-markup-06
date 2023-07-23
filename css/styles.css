@@ -1199,7 +1199,6 @@ margin-bottom: 16px;
 @media (max-width: 1128px) {
    .project-list  {
       justify-content: center;
-      text-align: center;
    }
    .section-portfolio {
       padding-top: 63.69px; padding-bottom: 96px; 
