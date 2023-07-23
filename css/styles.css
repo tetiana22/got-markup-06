@@ -1196,6 +1196,8 @@ margin-bottom: 16px;
    line-height: 1.5;
 }
 
+
+
 @media (max-width: 1128px) {
    .project-list  {
       justify-content: center;
@@ -1214,7 +1216,6 @@ margin-bottom: 16px;
       margin: 0 auto;
    }
   }
-  
 @media (max-width: 768px) {
    .section-portfolio {
       padding-top: 48px; padding-bottom: 48px; 
