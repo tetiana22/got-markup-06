@@ -45,7 +45,7 @@ h1, h2, h3, h4, p, ul {
 .container {
    width: 100%;
    height: 100%;
-   max-width: 396px;
+   max-width: 426px;
    margin: 0 auto;
    padding: 0 15px 0 15px;  
 }
@@ -55,7 +55,7 @@ h1, h2, h3, h4, p, ul {
 }
 @media (min-width: 1128px) {
    .container {
-   max-width: 1128px;}
+   max-width: 1158px;}
 }
 /*----------------------HEADER----------------------*/
 
@@ -70,7 +70,6 @@ h1, h2, h3, h4, p, ul {
 .contacts {
     display: flex;
     align-items: center;
-    padding-right: 300px;
 }
 .nav-logo {
     font-family: "Raleway", sans-serif;
@@ -154,37 +153,27 @@ h1, h2, h3, h4, p, ul {
 @media (max-width: 1128px) {
    .address-head {
         gap: 12px;
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
+        display: block;
+         font-size: 12px;
+         font-family: Roboto;
+         font-weight: 400;
+         font-style: normal;
+         line-height: 1.16px;
+         letter-spacing: 0.04em;
     } 
-        .address-lst {
-           padding-left: 121px;
-    }
-     .contacts {
-      padding-right: 0;
-    }
 }
 @media (max-width: 768px) {
     .page-head-container {
        height: 70px;
+       justify-content: space-between;
     }
     .nav-logo {
       margin-right: 0;
-      padding-right: 220px;
-      padding-left: 16px;
    }
 }
-@media (max-width: 428px) {
-   .page-head-container {
-      height: 70px;
-      justify-content: space-between;
-   }
-   .nav-logo {
-      margin-right: 0;
-      padding-right: 0;
-      
-   }
-}
+
 /*-------------phone-menu---------------*/
 @media (max-width: 767px) {
     .menu-list {
@@ -222,7 +211,6 @@ h1, h2, h3, h4, p, ul {
    cursor: pointer;
    border: none;
    outline: none;
-   padding-right: 16px;
  }
  
   @media (min-width: 768px) {
@@ -255,7 +243,6 @@ h1, h2, h3, h4, p, ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 40px; 
-    margin-bottom: 284px;
   }
   .mobile-item {
     display: block;
@@ -274,10 +261,6 @@ h1, h2, h3, h4, p, ul {
   .mobile-item:focus {
     color: #404BBF;
   }
-  .active {
-   color:#404BBF;
-   position: relative;
-  }
   .mobile-menu-adress {
     list-style: none;
     display: inline-flex;
@@ -285,12 +268,10 @@ h1, h2, h3, h4, p, ul {
     align-items: flex-start;
     gap: 40px;
     margin-bottom: 48px;
+    margin-top: auto;
   }
-  .mobile-menu-adress .tel {
-    display: block;
-    font-family: Roboto;
+  .addr-lst-tel {
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -298,10 +279,7 @@ h1, h2, h3, h4, p, ul {
     color: var(--link-color);
     text-decoration: none;
   }
-  .mobile-menu-adress .tel:hover,
-  .mobile-menu-adress .tel:focus {
-    color: #404BBF;
-  }
+ 
   .media-list-mobile {
     list-style: none;
     display: flex;
@@ -310,8 +288,8 @@ h1, h2, h3, h4, p, ul {
   .addr-lst {
    list-style: none;
    letter-spacing: 0.02em;
-   font-size: 16px;
-   line-height: 1.5;
+   font-size: 20px;
+   line-height: 1.2;
    color: var(--link-color);
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -319,6 +297,8 @@ h1, h2, h3, h4, p, ul {
 .addr-lst:focus {
    color: #404bbf;
 }
+ 
+ 
   @media (max-width: 428px) {
    .menu-toggle-open {
       height: 22px;
@@ -326,11 +306,13 @@ h1, h2, h3, h4, p, ul {
   }
   .media-list-mobile {
     gap: 45px;
-    margin-bottom: 40px;
   }
 }
   .container-mobile {
    max-width: 428px;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
    margin: 0 auto;
    padding: 80px 15px 40px;
    position: relative;
@@ -341,18 +323,21 @@ h1, h2, h3, h4, p, ul {
   }
   
   @media (max-width: 382px) {
-   .mobile-menu-adress .tel {
+   .addr-lst-tel {
      font-size: 28px;
      line-height: 1.11;
      letter-spacing: 0.02em;
    }
+  
  }
  @media (max-height: 796px) {
    .mobile-menu {
-     margin-bottom: 50px; 
      transition: margin-bottom 0.5s; 
    }
  }
+ .current {
+   color:#404BBF;
+  }
 /*----------------------SECTION-MAIN-----------------------*/
 .section-main {
    background-color: var(--background-color);
@@ -373,21 +358,7 @@ h1, h2, h3, h4, p, ul {
 }
 @media (min-resolution: 192dpi) {
    .section-main {
-    background-color: var(--background-color);
-   border: 1px solid #000;
-   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office1@2x.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding-top: 188px;
-   padding-bottom: 188px;
-   margin-left: auto;
-   margin-right: auto;
-   border: 1px solid #000;
-   max-width: 1440px;
-  max-height: 600px;
-  flex-shrink: 0;
-  background-position: center; 
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/people-office1@2x.jpg"); 
    }
  }
 .main-name {
@@ -410,13 +381,13 @@ h1, h2, h3, h4, p, ul {
    color: #ffffff;
    cursor: pointer;
    display: block;
-   max-width: 169px;
    height: 56px;
    border: none; 
    border-radius: 4px; 
    margin-left: auto;
    margin-right: auto;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   padding: 16px 32px;
 }
 .button:hover,
 .button:focus {
@@ -425,20 +396,78 @@ h1, h2, h3, h4, p, ul {
 @media (max-width: 1128px) {
    .section-main {
       padding: 112px 0;
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/background-tablet.jpg");
+      background-color: var(--background-color);
+      border: 1px solid #000;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+       padding-top: 188px;
+      padding-bottom: 188px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #000;
+      max-width: 1440px;
+     max-height: 600px;
+     flex-shrink: 0;
+     background-position: center; 
    }
+
+   @media (min-resolution: 192dpi) {
+      .section-main {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/background-tablet@2x.jpg"); 
+      }
+    }
    .main-name {
-      margin: 0 136px 36px;  
-      width: 496px;
+      margin: 0 auto 36px;  
+      max-width: 496px;
    }
 }
 @media (max-width: 768px) {
+   .section-main {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/background-phone.jpg");
+      background-color: var(--background-color);
+      border: 1px solid #000;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+       padding-top: 188px;
+      padding-bottom: 188px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid #000;
+      max-width: 428px;
+     max-height: 432px;
+     flex-shrink: 0;
+     background-position: center; 
+   }
+   @media (min-resolution: 192dpi) {
+      .section-main {
+         background-color: var(--background-color);
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/background-phone@2x.jpg"); 
+         border: 1px solid #000;
+         background-repeat: no-repeat;
+         background-size: cover;
+         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          padding-top: 188px;
+         padding-bottom: 188px;
+         margin-left: auto;
+         margin-right: auto;
+         border: 1px solid #000;
+         max-width: 1440px;
+        max-height: 600px;
+        flex-shrink: 0;
+        background-position: center; 
+        
+      }
+    }
    .main-name {
-      margin: 0 54px 72px;  
+      margin: 0 auto 72px;  
       font-size: 36px;
       line-height: 1.11;
       letter-spacing: 0.02em;
       text-transform: capitalize; 
-      width: 320px; 
+      max-width: 320px; 
       margin: 0 auto;
       margin-bottom: 72px;
    }
@@ -493,7 +522,11 @@ h1, h2, h3, h4, p, ul {
    color: var(--text-color);
    font-size: 16px;
    line-height: 1.5;
+   font-weight: 400;
+   font-family: Roboto;
+   font-style: normal;
 }
+
 /*--------adaptive--------*/
 @media (max-width: 1128px) {
    .sect-wrap-list {
@@ -512,7 +545,6 @@ h1, h2, h3, h4, p, ul {
       line-height: 1.11; 
       text-transform: capitalize;   
       justify-content: center;
-        text-align: center;
     }
   }
 @media screen and (max-width: 768px)  {
@@ -572,7 +604,7 @@ h1, h2, h3, h4, p, ul {
    letter-spacing: 0.02em;
    text-transform: capitalize;
    color: var(--name-color);
-   padding-bottom: 72px; 
+   margin-bottom: 72px; 
 
 }
 .name-hands {
@@ -581,7 +613,7 @@ h1, h2, h3, h4, p, ul {
    line-height: 1.2;
    letter-spacing: 0.02em;
    color: var(--name-color);
-   padding-bottom: 8px;
+   margin-bottom: 8px;
    text-align: center;
 }
 .text-hands {
@@ -590,7 +622,7 @@ h1, h2, h3, h4, p, ul {
    font-size: 16px;
    line-height: 1.5;
    text-align: center;
-   padding-bottom: 8px;
+  margin-bottom: 8px;
 
 }
 .hands-list {
@@ -656,7 +688,7 @@ h1, h2, h3, h4, p, ul {
       align-items: center;
       }
     .hands-image {
-      max-width: 232px;
+      max-width: 264px;
     }
    }
   
@@ -668,7 +700,7 @@ h1, h2, h3, h4, p, ul {
    font-size: 36px;
    line-height: 1.11;
    color: var(--name-color);
-   padding-bottom: 72px;
+   margin-bottom: 72px;
    text-align: center;
 }
 .customers-list {
@@ -701,8 +733,12 @@ h1, h2, h3, h4, p, ul {
 .icon-customers {
    fill: currentColor;
   }
+
   /*---------adaptive-----------*/
   @media (max-width: 1128px) {
+   .customers-container {
+      max-width: 582px;
+   }
    .customers-list {
       flex-wrap: wrap; 
       row-gap: 72px;
@@ -718,12 +754,10 @@ h1, h2, h3, h4, p, ul {
   }
 @media (max-width: 728px) {
   .customers-list-icon {
-   flex-basis: calc((100% - 24px) / 2); 
+   flex-basis: calc((100% - 16px) / 2); 
         }
         .customers-list {
          gap: 16px;
-         padding-left: 16px;
-         padding-right: 16px;
         }
       }
   
@@ -823,7 +857,6 @@ margin-bottom: 16px;
 .login-form {
    display: flex;
    gap: 24px;
-   max-width: 264px;
 }
 .login-email {
    width: 100%;
@@ -864,9 +897,12 @@ margin-bottom: 16px;
 .button-label:focus {
    background-color: #404BBF;
 }
+
 @media (max-width: 1128px) {
+   .footer-container {
+      max-width: 582px;
+   }
    .footer-content {
-      max-width: 552px;
       flex-direction: row;
       flex-wrap: wrap;
       row-gap: 72px;
